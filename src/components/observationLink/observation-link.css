@@ -1,0 +1,24 @@
+.observation-type {
+  padding: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #444444;
+}
+
+.observation-type :hover {
+  color: #54c6c1;
+}
+
+.observation-type :active {
+  color: #a8f0ec;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,58 @@
+.view-page {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  width: 100vw;
+}
+
+.elements {
+  width: 100%;
+  margin: 0px;
+  margin: auto;
+}
+
+.elements-inner {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  border-bottom: 1px solid #dedede;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  flex: 1;
+  margin-bottom: 20px;
+  color: #808080;
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: #54c6c1;
+}
+
+.button :active {
+  color: #a8f0ec;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+  .elements {
+    max-width: 500px;
+  }
+}

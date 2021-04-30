@@ -1,0 +1,26 @@
+.observation-container {
+  text-align: left;
+  background-color: #fcfcfc;
+  color: #444444;
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  justify-content: center;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.element {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.date {
+  color: #54c6c1;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
