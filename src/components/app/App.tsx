@@ -35,7 +35,7 @@ const AppContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  padding-top: 40px;
 `;
 
 class App extends React.Component<AppProps, AppState> {
