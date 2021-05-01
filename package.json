@@ -14,9 +14,10 @@
     "styled-components": "^4.2.0"
   },
   "scripts": {
-    "start:dev": "react-scripts-ts start",
-    "start": "serve -s build",
+    "start": "node server.js",
+    "startdev": "react-scripts-ts start",
     "build": "react-scripts-ts build",
+    "tsc": "tsc", 
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "create:component": "./node_modules/hygen/lib/bin.js component create",
@@ -28,6 +29,7 @@
       "@App/(.*)": "<rootDir>/src/$1"
     }
   },
+  "type": "module",
   "devDependencies": {
     "@types/history": "^4.7.2",
     "@types/jest": "^24.0.13",
