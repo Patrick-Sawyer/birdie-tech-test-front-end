@@ -1,8 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import ObservationLink from './ObservationLink';
+import { mount } from 'enzyme';
 
-import { MemoryRouter as Router } from 'react-router-dom';
+import { MemoryRouter as Router, Link } from 'react-router-dom';
 
 const observationLink = (
     <Router>
@@ -17,5 +18,10 @@ describe('observation link', () => {
             observationLink,
             div
         );
+    });
+
+    it('renders with a link with the correct props', () => {
+        const wrapper = mount(observationLink);
+        expect(wrapper.find(Link).props().to).toBe('/view/dummy-id/dummy-type');
     });
 });
