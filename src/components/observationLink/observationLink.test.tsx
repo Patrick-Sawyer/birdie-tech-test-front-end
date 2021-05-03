@@ -20,6 +20,10 @@ describe('observation link', () => {
         );
     });
 
+    // WHEN THIS TEST BELOW ADDED, RUNNING 'NPM TEST' GIVES THE FOLLOWING ERROR
+    // 'SyntaxError: Cannot use import statement outside a module'
+    // IT DOESN'T TROW THE ERROR WHEN IMPORTING ENZYME, ONLY WHEN USING MOUNT
+
     it('renders with a link with the correct props', () => {
         const wrapper = mount(observationLink);
         expect(wrapper.find(Link).props().to).toBe('/view/dummy-id/dummy-type');
